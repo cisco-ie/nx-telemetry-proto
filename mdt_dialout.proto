@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 package mdt_dialout;
+option go_package = "./;mdtdialout";
 
 service gRPCMdtDialout {
     rpc MdtDialout(stream MdtDialoutArgs) returns(stream MdtDialoutArgs) {};
